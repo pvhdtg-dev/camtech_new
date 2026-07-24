@@ -8,13 +8,6 @@ import { SITE } from '@/data/site'
 
 const CATEGORY_ICONS = [Cable, Cable, Gauge, Factory]
 
-const STATS = [
-  { value: '10+', label: 'Năm kinh nghiệm' },
-  { value: '4', label: 'Thương hiệu chiến lược' },
-  { value: '200+', label: 'Khách hàng tin dùng' },
-  { value: '100%', label: 'Hàng chính hãng' },
-]
-
 const WHY_US = [
   {
     icon: BadgeCheck,
@@ -50,19 +43,16 @@ export default function Home() {
               'radial-gradient(circle at 20% 30%, rgba(245,158,11,.35), transparent 40%), radial-gradient(circle at 80% 70%, rgba(245,158,11,.2), transparent 40%)',
           }}
         />
-        <div className="relative mx-auto max-w-7xl px-6 py-16 md:py-24">
-          <Badge className="mb-6 bg-amber-500/15 text-amber-400 hover:bg-amber-500/15">
-            Nhà phân phối thiết bị công nghiệp chính hãng
-          </Badge>
-          <h1 className="max-w-3xl text-4xl font-black leading-tight md:text-6xl">
+        <div className="relative mx-auto max-w-7xl px-6 py-16 md:py-24 text-center">
+          <h1 className="mx-auto max-w-3xl text-4xl font-black leading-tight md:text-6xl">
             Giải pháp <span className="text-amber-400">cáp công nghiệp</span> &{' '}
             <span className="text-amber-400">thiết bị khí nén</span> cho nhà máy của bạn
           </h1>
-          <p className="mt-6 max-w-2xl text-lg text-slate-300">
+          <p className="mx-auto mt-6 max-w-2xl text-lg text-slate-300">
             {SITE.name} chuyên phân phối cáp robot — cáp truyền thông Taiyo, Kuramo (Nhật Bản) và
             thiết bị khí nén SFC, Chanto (Đài Loan) với kho hàng sẵn, giá tốt và hỗ trợ kỹ thuật tận tâm.
           </p>
-          <div className="mt-10 flex flex-wrap gap-4">
+          <div className="mt-10 flex flex-wrap justify-center gap-4">
             <Button asChild size="lg" className="bg-amber-500 font-bold text-slate-950 hover:bg-amber-400">
               <Link to="/san-pham">
                 Xem sản phẩm <ArrowRight className="ml-2 h-4 w-4" />
@@ -76,16 +66,6 @@ export default function Home() {
             >
               <Link to="/lien-he">Liên hệ báo giá</Link>
             </Button>
-          </div>
-
-          {/* Stats */}
-          <div className="mt-16 grid grid-cols-2 gap-6 border-t border-slate-800 pt-10 md:grid-cols-4">
-            {STATS.map((s) => (
-              <div key={s.label}>
-                <div className="text-3xl font-black text-amber-400 md:text-4xl">{s.value}</div>
-                <div className="mt-1 text-sm text-slate-400">{s.label}</div>
-              </div>
-            ))}
           </div>
         </div>
       </section>
