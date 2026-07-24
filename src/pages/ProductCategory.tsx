@@ -50,22 +50,33 @@ export default function ProductCategory() {
       {/* Product lines */}
       <section className="mx-auto max-w-7xl px-6 py-16">
         <h2 className="mb-10 text-3xl font-black text-slate-900">Các dòng sản phẩm</h2>
+        {/* Ống khí PU — card đặc biệt link ra trang riêng */}
         {category.slug === 'khi-nen-sfc' && (
           <a
             href={`${import.meta.env.BASE_URL}ong-khi-pu.html`}
-            className="mb-8 flex flex-col gap-2 rounded-xl border border-amber-300 bg-amber-50 p-5 transition-colors hover:border-amber-500 sm:flex-row sm:items-center sm:justify-between"
+            className="group flex flex-col rounded-xl border-2 border-amber-300 bg-gradient-to-br from-amber-50 to-white p-7 transition-all hover:-translate-y-1 hover:border-amber-400 hover:shadow-lg"
           >
-            <div>
-              <div className="font-extrabold text-slate-900">
-                Xem trang riêng: Ống khí PU SFC (PU04×2.5mm – PU16×14mm)
-              </div>
-              <div className="text-sm text-slate-500">
-                Bảng sản phẩm chính, thông số kỹ thuật và hướng dẫn cách đọc mã đặt hàng chi tiết.
-              </div>
+            <Badge variant="outline" className="border-amber-500 font-mono text-xs text-amber-600">
+              PU Series
+            </Badge>
+            <h3 className="mt-3 text-lg font-extrabold text-slate-900 group-hover:text-amber-600">
+              Ống khí PU
+            </h3>
+            <p className="mt-2 text-sm leading-relaxed text-slate-500">
+              Ống khí nén Polyurethane chính hãng SFC từ Ø4×2.5mm đến Ø16×14mm — bảng sản phẩm, thông số kỹ thuật và hướng dẫn cách đọc mã đặt hàng.
+            </p>
+            <ul className="mt-4 space-y-2">
+              {['Đủ size từ PU-0425 đến PU-1614', 'Nhiều màu nhận diện', 'Cắt lẻ theo mét'].map((f) => (
+                <li key={f} className="flex gap-2 text-sm text-slate-600">
+                  <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-amber-500" />
+                  {f}
+                </li>
+              ))}
+            </ul>
+            <div className="mt-5 flex items-center text-sm font-bold text-amber-600">
+              Xem bảng tra cứu chi tiết
+              <ArrowRight className="ml-1.5 h-4 w-4 transition-transform group-hover:translate-x-1" />
             </div>
-            <span className="inline-flex items-center text-sm font-bold text-amber-600">
-              Mở trang <ArrowRight className="ml-1.5 h-4 w-4" />
-            </span>
           </a>
         )}
         <div className="grid gap-6 md:grid-cols-2">
