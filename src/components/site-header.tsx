@@ -7,18 +7,8 @@ import { NAV_ITEMS, SITE } from '@/data/site'
 
 function Logo() {
   return (
-    <Link to="/" className="flex items-center gap-2.5">
-      <div className="flex h-9 w-9 items-center justify-center rounded-md bg-amber-500 font-black text-slate-950">
-        CT
-      </div>
-      <div className="leading-tight">
-        <div className="text-lg font-black tracking-wide text-slate-900">
-          CAM<span className="text-amber-500">TECH</span>
-        </div>
-        <div className="text-[10px] font-medium uppercase tracking-widest text-slate-500">
-          camtech.vn
-        </div>
-      </div>
+    <Link to="/" className="flex items-center">
+      <img src={`${import.meta.env.BASE_URL}logo-camtech.png`} alt="Camtech" className="h-9 w-auto" />
     </Link>
   )
 }
