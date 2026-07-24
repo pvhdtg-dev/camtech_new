@@ -1,6 +1,7 @@
 import { Routes, Route } from 'react-router'
 import SiteHeader from './components/site-header'
 import SiteFooter from './components/site-footer'
+import FloatingContact from './components/floating-contact'
 import Home from './pages/Home'
 import About from './pages/About'
 import Products from './pages/Products'
@@ -22,6 +23,7 @@ export default function App() {
         </Routes>
       </div>
       <SiteFooter />
+      <FloatingContact />
     </div>
   )
 }
