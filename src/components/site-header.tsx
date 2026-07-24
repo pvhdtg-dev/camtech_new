@@ -21,8 +21,7 @@ export default function SiteHeader() {
     <header className="sticky top-0 z-50 w-full border-b border-slate-200 bg-white/95 backdrop-blur">
       {/* Top bar */}
       <div className="hidden bg-slate-950 text-xs text-slate-300 md:block">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-1.5">
-          <span>{SITE.slogan}</span>
+        <div className="mx-auto flex max-w-7xl items-center justify-end px-6 py-1.5">
           <div className="flex items-center gap-5">
             <a href={`tel:${SITE.hotlineRaw}`} className="flex items-center gap-1.5 hover:text-amber-400">
               <Phone className="h-3 w-3" /> Hotline: {SITE.hotline}

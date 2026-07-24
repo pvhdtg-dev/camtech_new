@@ -17,7 +17,7 @@ export default function ProductCategory() {
   return (
     <main>
       {/* Hero */}
-      <section className="bg-slate-950 py-20 text-white">
+      <section className="bg-slate-950 py-12 text-white">
         <div className="mx-auto max-w-7xl px-6">
           <Link
             to="/san-pham"

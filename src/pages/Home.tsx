@@ -50,7 +50,7 @@ export default function Home() {
               'radial-gradient(circle at 20% 30%, rgba(245,158,11,.35), transparent 40%), radial-gradient(circle at 80% 70%, rgba(245,158,11,.2), transparent 40%)',
           }}
         />
-        <div className="relative mx-auto max-w-7xl px-6 py-24 md:py-32">
+        <div className="relative mx-auto max-w-7xl px-6 py-16 md:py-24">
           <Badge className="mb-6 bg-amber-500/15 text-amber-400 hover:bg-amber-500/15">
             Nhà phân phối thiết bị công nghiệp chính hãng
           </Badge>
@@ -177,7 +177,7 @@ export default function Home() {
       </section>
 
       {/* CTA */}
-      <section className="bg-slate-950 py-20 text-white">
+      <section className="bg-slate-950 py-12 text-white">
         <div className="mx-auto max-w-4xl px-6 text-center">
           <h2 className="text-3xl font-black md:text-4xl">
             Cần tư vấn chọn cáp hoặc thiết bị khí nén?

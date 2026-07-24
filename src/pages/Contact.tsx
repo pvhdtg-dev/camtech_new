@@ -55,7 +55,7 @@ export default function Contact() {
 
   return (
     <main>
-      <section className="bg-slate-950 py-20 text-white">
+      <section className="bg-slate-950 py-12 text-white">
         <div className="mx-auto max-w-7xl px-6">
           <Badge className="mb-4 bg-amber-500/15 text-amber-400 hover:bg-amber-500/15">Liên hệ</Badge>
           <h1 className="max-w-3xl text-4xl font-black leading-tight md:text-5xl">
