@@ -52,7 +52,7 @@ export default function ProductCategory() {
         <h2 className="mb-10 text-3xl font-black text-slate-900">Các dòng sản phẩm</h2>
         {category.slug === 'khi-nen-sfc' && (
           <a
-            href="/ong-khi-pu.html"
+            href={`${import.meta.env.BASE_URL}ong-khi-pu.html`}
             className="mb-8 flex flex-col gap-2 rounded-xl border border-amber-300 bg-amber-50 p-5 transition-colors hover:border-amber-500 sm:flex-row sm:items-center sm:justify-between"
           >
             <div>
