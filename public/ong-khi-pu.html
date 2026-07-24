@@ -193,7 +193,18 @@
       border: 1px solid var(--slate-200); border-radius: 999px;
       padding: 6px 14px 6px 8px; font-size: 13px; font-weight: 600; background: #fff;
     }
-    .dot { width: 16px; height: 16px; border-radius: 50%; border: 1px solid rgba(0,0,0,.12); }
+    .chip .dot { width: 16px; height: 16px; border-radius: 50%; border: 1px solid rgba(0,0,0,.12); }
+
+    /* ---------- Product showcase ---------- */
+    .showcase { display: flex; flex-wrap: wrap; gap: 20px; margin-top: 36px; }
+    .showcase-item {
+      flex: 1; min-width: 200px; max-width: 320px;
+      text-align: center; background: var(--slate-900); border-radius: var(--radius);
+      padding: 20px 16px 12px; transition: transform .15s ease;
+    }
+    .showcase-item:hover { transform: translateY(-4px); }
+    .showcase-item img { width: 100%; height: auto; max-height: 260px; object-fit: contain; }
+    .showcase-item .label { color: var(--amber-400); font-size: 13px; font-weight: 700; margin-top: 10px; }
 
     /* ---------- Feature cards ---------- */
     .grid-3 { grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
@@ -254,6 +265,20 @@
         <strong>PU-1614 (Ø16×14&nbsp;mm)</strong> — nhiều màu nhận diện, hàng sẵn kho,
         cắt lẻ theo mét theo yêu cầu.
       </p>
+      <div class="showcase">
+        <div class="showcase-item">
+          <img src="ong-pu-xanh.png" alt="Ống khí PU màu xanh dương" loading="lazy" />
+          <div class="label">Xanh dương (BU)</div>
+        </div>
+        <div class="showcase-item">
+          <img src="ong-pu-den.png" alt="Ống khí PU màu đen" loading="lazy" />
+          <div class="label">Đen (BK)</div>
+        </div>
+        <div class="showcase-item">
+          <img src="ong-pu-cam.png" alt="Ống khí PU màu cam" loading="lazy" />
+          <div class="label">Cam</div>
+        </div>
+      </div>
       <div class="hero-actions">
         <a class="btn btn-primary" href="#san-pham-chinh">Xem sản phẩm chính</a>
         <a class="btn btn-outline" href="#cach-doc-ma">Cách đọc mã đặt hàng</a>
